@@ -91,3 +91,65 @@ li {
   font-size: 20px;
   line-height: 28px;
 }
+
+/* - - - - - - - - - - - - - - - - - - - - - -
+- - - - - - - - Headline section - - - - - - - -
+- - - - - - - - - - - - - - - - - - - - - - */
+#headline {
+  padding: 64px 0;
+  background-image: url("../images/bg-headline.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.headline__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 58px;
+}
+
+.headline__primary {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+}
+
+.headline__primary--first {
+  color: #172b4d;
+  display: block;
+}
+
+.headline__primary--second {
+  color: #36b37e;
+  display: block;
+}
+
+.headline__text {
+  color: #172b4d;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.headline__social-icons {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  justify-content: center;
+}
+
+.headline__scroll {
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headline__scroll-icon {
+  background-color: #fff;
+  border-radius: 100%;
+  padding: 8px;
+  border: 1px solid #dfe1e6;
+}
