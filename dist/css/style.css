@@ -73,3 +73,21 @@ li {
 .wrapper {
   margin: 0 24px;
 }
+
+/* - - - - - - - - - - - - - - - - - - - - - -
+- - - - - - - - Header section - - - - - - - -
+- - - - - - - - - - - - - - - - - - - - - - */
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  height: 48px;
+  align-items: center;
+}
+
+.header__logo {
+  color: #28352f;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+}
