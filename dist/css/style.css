@@ -1,0 +1,75 @@
+/* - - - - - - - - - - - - - - - - - - - - - -
+- - - - Reset default browser styles - - - - -
+- - - - - - - - - - - - - - - - - - - - - - */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  font-family: Inter, Helvetica, Arial, sans-serif;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+
+ul,
+li {
+  padding: 0;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - -
+- - - - - - - - common section - - - - - - - -
+- - - - - - - - - - - - - - - - - - - - - - */
+.wrapper {
+  margin: 0 24px;
+}
