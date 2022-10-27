@@ -78,11 +78,11 @@ li {
 - - - - - - - - Header section - - - - - - - -
 - - - - - - - - - - - - - - - - - - - - - - */
 
-.header-inner {
+.header-nav {
   display: flex;
-  justify-content: space-between;
-  height: 48px;
   align-items: center;
+  height: 48px;
+  justify-content: space-between;
 }
 
 .header-logo {
@@ -92,16 +92,22 @@ li {
   line-height: 28px;
 }
 
+.header-hamburger {
+  padding: 8px;
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - -
 - - - - - - - - Headline section - - - - - - - -
 - - - - - - - - - - - - - - - - - - - - - - */
 #headline {
   padding: 64px 0;
-  background-image: url("../images/bg-headline.svg");
+  background-image: url("../images/headline/background-1.svg"), url("../images/headline/background-2.svg"), url("../images/headline/background-3.svg"), url("../images/headline/background-4.svg"), url("../images/headline/background-5.svg"), url("../images/headline/background-6.svg"), url("../images/headline/background-7.svg"), url("../images/headline/background-8.svg");
+  background-position: center center, 100% 42%, 0% 72%, 0% 19%, 0% 0%, 100% -1%, 40% 68%, 100% 90%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover, auto, auto, auto, auto, auto, auto, auto;
 }
 
+/* background-position: center center, 100% 48%, 2% 27%, 0 91%, 95% 96%, 57% 0; */
 .headline-inner {
   display: flex;
   flex-direction: column;
