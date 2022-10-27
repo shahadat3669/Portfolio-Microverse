@@ -78,14 +78,14 @@ li {
 - - - - - - - - Header section - - - - - - - -
 - - - - - - - - - - - - - - - - - - - - - - */
 
-.header__inner {
+.header-inner {
   display: flex;
   justify-content: space-between;
   height: 48px;
   align-items: center;
 }
 
-.header__logo {
+.header-logo {
   color: #28352f;
   font-weight: 600;
   font-size: 20px;
@@ -102,30 +102,30 @@ li {
   background-size: cover;
 }
 
-.headline__inner {
+.headline-inner {
   display: flex;
   flex-direction: column;
   gap: 58px;
 }
 
-.headline__primary {
+.headline-primary {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   text-align: center;
 }
 
-.headline__primary--first {
+.headline-primary-first {
   color: #172b4d;
   display: block;
 }
 
-.headline__primary--second {
+.headline-primary-second {
   color: #36b37e;
   display: block;
 }
 
-.headline__text {
+.headline-text {
   color: #172b4d;
   font-weight: 400;
   font-size: 20px;
@@ -133,21 +133,21 @@ li {
   text-align: center;
 }
 
-.headline__social-icons {
+.headline-social-icons {
   display: flex;
   list-style: none;
   gap: 20px;
   justify-content: center;
 }
 
-.headline__scroll {
+.headline-scroll {
   padding: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.headline__scroll-icon {
+.headline-scroll-icon {
   background-color: #fff;
   border-radius: 100%;
   padding: 8px;
