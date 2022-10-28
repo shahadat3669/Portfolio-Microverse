@@ -78,6 +78,7 @@ li {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
+  color: #172b4d;
 }
 
 /* ----- Button ----- */
@@ -95,6 +96,7 @@ li {
 
 .btn--primary {
   background-color: #36b37f;
+  margin: 0 auto;
 }
 
 /* ----- card ----- */
@@ -151,7 +153,42 @@ li {
   padding-top: 13px;
   padding-bottom: 8px;
 }
+.card__icon-wrapper {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.card__icon-container {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 16px 24px rgba(37, 47, 137, 0.08);
+}
+.card--secondary {
+  background-color: #ebf0ee;
+  border: 1px solid #c1c7d0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding-top: 16px;
+  padding-bottom: 72px;
+}
 
+.card--secondary-content .card__title {
+  color: #344563;
+}
+.card--secondary-content .card__list-items {
+  margin-top: 24px;
+  justify-content: center;
+}
+.card--secondary-content .card__list-item {
+  background-color: #fff;
+  color: #36b37e;
+}
 /* - - - - - - - - - - - - - - - - - - - - - -
 - - - - - - - - Header section - - - - - - - -
 - - - - - - - - - - - - - - - - - - - - - - */
@@ -275,5 +312,42 @@ li {
 
 .recent-work__cards-container {
   display: grid;
+  gap: 24px;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - -
+- - - - - - - - About Me - - - - - - - -
+- - - - - - - - - - - - - - - - - - - - - - */
+#about-me {
+  padding-bottom: 64px;
+  background-image: url("../images/about-me/illustration1.svg"),
+    url("../images/about-me/illustration2.svg");
+  background-position: 100% -2%, 0% 17%;
+  background-repeat: no-repeat;
+}
+.about-me__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 58px;
+}
+.about-me__content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.about-me__title {
+  text-align: center;
+  position: relative;
+}
+.about-me__text {
+  color: #42526e;
+  text-align: center;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.about-me__cards-container {
+  display: flex;
+  flex-direction: column;
   gap: 24px;
 }
