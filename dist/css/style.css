@@ -97,6 +97,15 @@ li {
 .btn--primary {
   background-color: #36b37f;
   margin: 0 auto;
+  cursor: pointer;
+}
+
+.btn--primary:hover {
+  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+}
+.btn--primary:active {
+  background: #008552;
+  box-shadow: none;
 }
 
 /* ----- card ----- */
