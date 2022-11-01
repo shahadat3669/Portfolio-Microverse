@@ -367,13 +367,13 @@ li {
 #contact-form {
   padding: 64px 0;
 }
-.contact-form__title {
-  text-align: center;
-}
 .contact-form__inner {
   display: flex;
   flex-direction: column;
   gap: 58px;
+}
+.contact-form__title {
+  text-align: center;
 }
 .contact-form__form {
   display: flex;
@@ -393,9 +393,10 @@ li {
 .contact-form__form input::placeholder {
   color: #6b778c;
 }
-.contact-form__form input:focus {
+.contact-form__form input:focus,
+.contact-form__form input:valid{
   color: #091e42;
-  border: 1px soid #60c095;
+  border: 1px solid #60c095;
 }
 .contact-form__form textarea {
   border: 1px solid #d0d9d4;
@@ -407,9 +408,9 @@ li {
   font-size: 15px;
   line-height: 24px;
 }
-.contact-form__form textarea:active {
-  border: 1px soid #60c095;
-}
 .contact-form__form textarea::placeholder {
   color: #6b778c;
+}
+.contact-form__form textarea:focus, .contact-form__form textarea:valid {
+  border: 1px solid #60c095;
 }
