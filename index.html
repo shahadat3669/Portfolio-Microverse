@@ -341,12 +341,15 @@
               id="contact-form__full-name"
               placeholder="Full name"
               name="full-name"
+              maxlength="30"
+              required
             />
             <input
               type="email"
               placeholder="Email address"
               id="contact-form__email"
               name="email"
+              required
             />
             <textarea
               name="message"
@@ -354,6 +357,8 @@
               cols="30"
               rows="5"
               placeholder="Enter text here"
+              maxlength="500"
+              required
             ></textarea>
             <button class="btn btn--primary">Get in touch</button>
           </form>
