@@ -18,6 +18,7 @@ body {
 
 body {
   min-height: 100vh;
+  position: relative;
 }
 
 img,
@@ -365,7 +366,7 @@ li {
 - - - - - - Contact form section - - - - - - -
 - - - - - - - - - - - - - - - - - - - - - - */
 #contact-form {
-  padding: 64px 0;
+  padding-top: 64px;
 }
 .contact-form__inner {
   display: flex;
@@ -433,7 +434,8 @@ li {
 }
 #footer {
   padding-bottom: 64px;
+  padding-top: 80px;
   background-image: url("../images/bg-contactform.svg");
-  background-position: 100% -205%;
+  background-position: 100% -18%;
   background-repeat: no-repeat;
 }
