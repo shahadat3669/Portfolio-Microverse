@@ -39,11 +39,14 @@ Go to the project directory
 ```
 
 ## 👤 Author
-
+### First Author:
 **Shahadat Hossain**
 
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/shahadat3669) [![linkedin](https://img.shields.io/badge/shahadat3669-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/shahadat3669) [![twitter](https://img.shields.io/badge/@shahadat3669-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/shahadat3669)
+### Second Author:
+**Luis Zubia**
 
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/luigirazum) [![linkedin](https://img.shields.io/badge/Luis_Zubia-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/luiszubia) [![twitter](https://img.shields.io/badge/@LuigiRazum-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/LuigiRazum)
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
