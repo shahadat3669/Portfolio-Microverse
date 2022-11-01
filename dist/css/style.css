@@ -394,7 +394,7 @@ li {
   color: #6b778c;
 }
 .contact-form__form input:focus,
-.contact-form__form input:valid{
+.contact-form__form input:valid {
   color: #091e42;
   border: 1px solid #60c095;
 }
@@ -411,6 +411,29 @@ li {
 .contact-form__form textarea::placeholder {
   color: #6b778c;
 }
-.contact-form__form textarea:focus, .contact-form__form textarea:valid {
+.contact-form__form textarea:focus,
+.contact-form__form textarea:valid {
   border: 1px solid #60c095;
+}
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer__email {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 64px;
+  color: #42526e;
+}
+#footer {
+  padding-bottom: 64px;
+  background-image: url("../images/bg-contactform.svg");
+  background-position: 100% -205%;
+  background-repeat: no-repeat;
 }
