@@ -292,14 +292,28 @@ li {
   background-size: cover, auto, auto, auto, auto, auto, auto, auto;
 }
 
+.headline__bg {
+  display: none;
+}
+
 @media (min-width: 768px) {
   #headline {
     background-image: none;
+    padding: 160px 0;
+    margin-bottom: 200px;
   }
+
   .headline__bg {
-    background-image: url("../images/Header-llustration-desktop@2x.png");
     position: absolute;
-    z-index: 1000;
+    z-index: -100;
+    top: -25px;
+    left: 0;
+    width: 103vw;
+    display: block;
+  }
+
+  .headline__bg img {
+    width: 100%;
   }
 }
 
@@ -390,9 +404,11 @@ li {
 .recent-work__inner {
   display: grid;
   gap: 86px;
+  margin: 0 auto;
   margin-top: -86px;
   padding: 64px 0;
   width: fit-content;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
@@ -450,9 +466,34 @@ li {
   background-repeat: no-repeat;
 }
 
+.about-me__bg {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #about-me {
+    background-image: none;
+    position: relative;
+  }
+
+  .about-me__bg {
+    position: absolute;
+    z-index: -100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+  }
+
+  .about-me__bg img {
+    width: 100%;
+  }
+}
+
 .about-me__inner {
   display: flex;
   flex-direction: column;
+  text-align: center;
   gap: 58px;
 }
 
@@ -470,6 +511,7 @@ li {
 
 @media (min-width: 768px) {
   .about-me__content {
+    margin-bottom: 46px;
     justify-content: center;
   }
 }
@@ -498,7 +540,7 @@ li {
 
 @media (min-width: 768px) {
   .about-me__text {
-    max-width: 920px;
+    max-width: 660px;
     text-align: center;
     margin: 0 auto;
   }
@@ -528,6 +570,25 @@ li {
   #contact-form {
     padding-top: 0;
     padding-bottom: 144px;
+    position: relative;
+  }
+}
+.contact-form__bg {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .contact-form__bg {
+    position: absolute;
+    z-index: -100;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+  }
+
+  .contact-form__bg img {
+    width: 100%;
   }
 }
 
@@ -552,6 +613,7 @@ li {
 .contact-form__title {
   text-align: center;
 }
+
 @media (min-width: 768px) {
   .contact-form__title {
     text-align: left;
