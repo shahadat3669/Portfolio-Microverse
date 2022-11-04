@@ -220,6 +220,10 @@ li {
   padding-bottom: 72px;
   width: 100%;
 }
+.card--secondary:hover {
+  transition: all 1s ease-out;
+  box-shadow: inset 0 0 14px 0 rgba(0, 0, 0, 0.5);
+}
 
 .card--secondary-content .card__title {
   color: #344563;
