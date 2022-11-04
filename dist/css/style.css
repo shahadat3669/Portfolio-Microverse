@@ -101,6 +101,11 @@ li {
   line-height: 24px;
   letter-spacing: 0.48px;
   color: #fff;
+  transition: all 0.3s ease-out;
+}
+
+.btn:hover {
+  transform: scaleX(1.1);
 }
 
 .btn--primary {
