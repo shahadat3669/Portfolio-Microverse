@@ -139,6 +139,11 @@ li {
 .card__image-container img {
   width: 100%;
   height: 252px;
+  transition: all 0.5s ease-in-out;
+}
+
+.card__image-container:hover img {
+  transform: scale(1.2);
 }
 
 .card__content {
