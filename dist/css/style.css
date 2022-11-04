@@ -269,6 +269,13 @@ li {
     font-size: 15px;
     line-height: 20px;
   }
+  .nav__item a {
+    color: #172b4d;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+  }
 }
 
 .header-hamburger {
@@ -633,6 +640,7 @@ li {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
@@ -689,6 +697,15 @@ li {
   border: 1px solid #60c095;
 }
 
+.contact-form__btn-wrapper {
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .contact-form__btn-wrapper {
+    margin: 0;
+  }
+}
 /* - - - - - - - - - - - - - - - - - - - - - -
 - - - - - - Footer section - - - - - - -
 - - - - - - - - - - - - - - - - - - - - - - */
