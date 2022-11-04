@@ -306,9 +306,8 @@ li {
   .headline__bg {
     position: absolute;
     z-index: -100;
-    top: -25px;
-    left: 0;
-    width: 103vw;
+    top: 0;
+    right: -15px;
     display: block;
   }
 
