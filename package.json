@@ -4,7 +4,8 @@
   "description": "replicate one of the portfolio templates Microverse is provided",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fix-styles": "prettier-stylelint --write './dist/**/*.{css,scss}' "
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,13 @@
   },
   "homepage": "https://github.com/shahadat3669/Portfolio-Microverse#readme",
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.26.0",
     "hint": "^7.1.3",
+    "prettier-eslint": "^15.0.1",
+    "prettier-stylelint": "^0.4.2",
     "stylelint": "^14.14.0",
     "stylelint-config-standard": "^29.0.0",
     "stylelint-csstree-validator": "^2.0.0",
