@@ -279,14 +279,13 @@ li {
   margin-left: 30px;
   font-family: 'inter', sans-serif;
   font-style: normal;
-font-weight: 600;
-font-size: 32px;
-line-height: 44px;
-color: #3A4A42;
-list-style: none;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #3A4A42;
 }
 .nav__list a{
-color: inherit;
+  color: inherit;
 }
 .header-close{
   height: 48px;
@@ -331,12 +330,12 @@ color: inherit;
   }
 }
 
-.header-hamburger {
+#header-hamburger {
   padding: 8px;
 }
 
 @media (min-width: 768px) {
-  .header-hamburger {
+  #header-hamburger {
     display: none;
   }
 }
