@@ -241,6 +241,13 @@ li {
 /* - - - - - - - - - - - - - - - - - - - - - -
 - - - - - - - - Header section - - - - - - - -
 - - - - - - - - - - - - - - - - - - - - - - */
+#header{
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  min-height: 48px;
+  background-color: #fff;
+}
 .header-nav {
   display: flex;
   align-items: center;
@@ -265,7 +272,7 @@ li {
   position: absolute;
   background-color: #fff;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   top: 0;
   left: 0;
   right: 0;
