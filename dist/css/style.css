@@ -291,7 +291,12 @@ li {
   position: relative;
   align-self:flex-end;
   width: max-content;
-  margin: 24px
+  margin-right: 24px;
+  padding: 8px;
+  margin-top: 2px;
+  height: 44px;
+  border: none;
+  background-color: #fff;
 }
 
 @media (min-width: 768px) {
@@ -326,6 +331,8 @@ li {
 
 #header-hamburger {
   padding: 8px;
+  border: none;
+  background-color: #fff;
 }
 
 @media (min-width: 768px) {
