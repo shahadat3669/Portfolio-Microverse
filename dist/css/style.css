@@ -865,6 +865,7 @@ li {
   z-index: 1001;
   height: 100%;
   padding: 20px 16px;
+  overflow-y: auto;
 }
 
 .popup-inner {
@@ -883,6 +884,25 @@ li {
   gap: 12px;
 }
 
+.popup-title {
+  font-weight: 600;
+font-size: 32px;
+line-height: 44px;
+color: #172B4D;
+}
+
+.popup-left-block {
+  font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #344563;
+}
+
+.popup-action {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
 /* - - - - - - - - - - - - - - - - - - - - - -
 - - - - - - keyframes section - - - - - - -
 - - - - - - - - - - - - - - - - - - - - - - */
