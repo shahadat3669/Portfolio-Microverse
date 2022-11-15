@@ -21,10 +21,10 @@
               <button class="header-close" onclick="menucloseToggler()">
                 <img src="dist/images/cancel.svg" alt="cancel icon" />
               </button>
-              <ul class="nav__list">
-                <li class="nav__item" onclick="menucloseToggler()"><a href="#recent-work">Portoflio</a></li>
-                <li class="nav__item" onclick="menucloseToggler()"><a href="#about-me">About</a></li>
-                <li class="nav__item" onclick="menucloseToggler()"><a href="#contact-form">Contact</a></li>
+              <ul class="nav-list">
+                <li class="nav-item" onclick="menucloseToggler()"><a href="#recent-work">Portoflio</a></li>
+                <li class="nav-item" onclick="menucloseToggler()"><a href="#about-me">About</a></li>
+                <li class="nav-item" onclick="menucloseToggler()"><a href="#contact-form">Contact</a></li>
               </ul>
             </div>
             <button id="header-hamburger" onclick="menuToggler()">
@@ -74,13 +74,13 @@
           </a>
         </div>
       </div>
-      <div class="headline__bg">
+      <div class="headline-bg">
         <img src="./dist/images/background.svg" alt="ksdfj" />
       </div>
     </section>
     <section id="recent-work">
       <div class="wrapper">
-        <div class="recent-work__inner">
+        <div class="recent-work-inner">
           <h2 class="recent-work__title title--3">My Recent Works</h2>
           <div class="recent-work__cards-container">
             <!-- recent work card 1 -->
@@ -307,6 +307,29 @@
         </div>
       </div>
     </footer>
+    <!-- pop up section for project  -->
+    <section id="popup">
+      <div class="popup-inner">
+        <div class="img-container">
+          <img src="" alt="" />
+        </div>
+        <div class="popup-primary-text">
+          <h3 class="popup-title">Keeping track of hundreds of components</h3>
+          <ul class="card__list-items">
+            <li class="card__list-item">html</li>
+            <li class="card__list-item">CSS</li>
+            <li class="card__list-item">JavaScript</li>
+          </ul>
+        </div>
+        <div class="popup-left-block">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea</p>
+        </div>
+        <div class="popup-action">
+          <a href="#" class="popup-action-btn">See Live <img src="" class="popup-action-btn-icon" alt="" /></a>
+          <a href="#" class="popup-action-btn">See Source <img src="" class="popup-action-btn-icon" alt="" /></a>
+        </div>
+      </div>
+    </section>
     <script src="./js/script.js"></script>
   </body>
 </html>
