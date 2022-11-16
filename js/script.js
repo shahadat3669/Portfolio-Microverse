@@ -99,15 +99,17 @@ projectList.forEach((project) => {
 recentWorkCardsContainer.innerHTML = cardsHtmlGenerator;
 
 function popupW(id) {
-  const popupHtmlGenerator = `<div class="popup-inner">
+  const popupHtmlGenerator = `
   <div class="popup-wrapper">
   <div class="popup-inner">
     <div class="img-container">
       <button class="btn popup-cancel" onclick="popupWC()">
-<div> <img src="./dist/images/popup-cancle.svg" alt="icon cancel" class="popup-cancle-icon" />
-     </div>
-        </button>
+          <img src="./dist/images/popup-cancle.svg" alt="icon cancel" class="popup-cancle-icon" />
+      </button>
+      <div class="popup-img-box"> 
       <img src="${projectList[id].imgUrl}" alt="${projectList[id].title}" />
+      </div>
+
     </div>
     <div class="popup-primary-text">
       <div class="popup-title-container">
