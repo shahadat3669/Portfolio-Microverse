@@ -907,6 +907,8 @@ li {
   background-color: #ebf0ee;
 }
 
+
+
 .popup-img {
   width: 100%;
 }
@@ -921,6 +923,13 @@ li {
 
 .popup-cancel:hover {
   background-color: #091e426c;
+}
+
+@media (min-width: 768px) {
+  .popup-cancel {
+    position: absolute;
+    top: 0;
+  }
 }
 
 .popup-top-action-container {

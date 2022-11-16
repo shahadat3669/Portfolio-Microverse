@@ -104,8 +104,9 @@ function popupW(id) {
   <div class="popup-inner">
     <div class="img-container">
       <button class="btn popup-cancel" onclick="popupWC()">
-        <img src="./dist/images/popup-cancle.svg" alt="icon cancel" class="popup-cancle-icon" />
-      </button>
+<div> <img src="./dist/images/popup-cancle.svg" alt="icon cancel" class="popup-cancle-icon" />
+     </div>
+        </button>
       <img src="${projectList[id].imgUrl}" alt="${projectList[id].title}" />
     </div>
     <div class="popup-primary-text">
