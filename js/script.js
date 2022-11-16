@@ -2,8 +2,6 @@ const navbar = document.querySelector('.header-navbar');
 const headerHamburger = document.querySelector('#header-hamburger');
 const headerClose = document.querySelector('.header-close');
 const popupwindow = document.querySelector('#popup');
-const closebt = document.querySelector('.popup-cancel');
-const projectBtn = document.querySelector('.btn-project');
 const recentWorkCardsContainer = document.querySelector('.recent-work-cards-container');
 
 function menuToggler() {
@@ -17,9 +15,6 @@ function menucloseToggler() {
 
 function popupWC() {
   popupwindow.style.display = 'none';
-}
-function popupW() {
-  popupwindow.style.display = 'flex';
 }
 
 const projectList = [
@@ -103,7 +98,51 @@ projectList.forEach((project) => {
 
 recentWorkCardsContainer.innerHTML = cardsHtmlGenerator;
 
+function popupW(id) {
+  const popupHtmlGenerator = `<div class="popup-inner">
+  <div class="popup-wrapper">
+  <div class="popup-inner">
+    <div class="img-container">
+      <button class="btn popup-cancel" onclick="popupWC()">
+        <img src="./dist/images/popup-cancle.svg" alt="icon cancel" class="popup-cancle-icon" />
+      </button>
+      <img src="${projectList[id].imgUrl}" alt="${projectList[id].title}" />
+    </div>
+    <div class="popup-primary-text">
+      <div class="popup-title-container">
+        <h3 class="popup-title">Keeping track of hundreds of components</h3>
+        <div class="popup-top-action-container">
+          <div class="inner">
+            <a href="${projectList[id].live}" target="_blank" class="popup-action-btn btn btn-primary popup-action">See Live <img src="dist/images/live.svg" class="popup-action-btn-icon" alt="" /></a>
+            <a href="${projectList[id].source}" target="_blank" class="popup-action-btn btn btn-primary popup-action">See Source <img src="dist/images/white-github.svg" class="popup-action-btn-icon" alt="" /></a>
+          </div>
+        </div>
+      </div>
+      <ul class="card-list-items popup-tags">
+      ${projectList[id].tags.map((tag) => `<li class="card-list-item">${tag}</li>`).join(' ')} 
+      </ul>
+    </div>
+    <div class="popup-left-block">
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea</p>
+    </div>
+    <div class="popup-action-container">
+      <a href="${projectList[id].live}" target="_blank" class="popup-action-btn btn btn-primary popup-action">See Live <img src="dist/images/live.svg" class="popup-action-btn-icon" alt="" /></a>
+      <a href="${projectList[id].source}" target="_blank" class="popup-action-btn btn btn-primary popup-action">See Source <img src="dist/images/white-github.svg" class="popup-action-btn-icon" alt="" /></a>
+    </div>
+  </div>
+</div>
+`;
+
+  popupwindow.innerHTML = popupHtmlGenerator;
+
+  popupwindow.style.display = 'flex';
+}
+
+const x = 0;
+if (x === 1) {
+  popupWC();
+  popupW();
+}
+
 headerHamburger.addEventListener('click', menuToggler);
 headerClose.addEventListener('click', menucloseToggler);
-closebt.addEventListener('click', popupWC);
-projectBtn.addEventListener('click', popupW);

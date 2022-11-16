@@ -904,6 +904,7 @@ li {
 .img-container {
   position: relative;
   width: 100%;
+  background-color: #ebf0ee;
 }
 
 .popup-img {
