@@ -867,7 +867,7 @@ li {
   height: 100%;
   padding: 20px 16px;
   overflow-y: auto;
-  display: flex;
+  display: none;
   justify-content: center;
 }
 
