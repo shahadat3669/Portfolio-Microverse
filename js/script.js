@@ -149,3 +149,60 @@ if (x === 1) {
 
 headerHamburger.addEventListener('click', menuToggler);
 headerClose.addEventListener('click', menucloseToggler);
+
+//function validateEmail() {
+//  const formCont = document.querySelector('.contact-form-form');
+//  let element = formCont.querySelector('input[name="email"]');
+//  console.log(element);
+//}
+
+//const submitButton = document.querySelector('#contact-form-submit');
+//submitButton.addEventListener('click', validateEmail());
+function showMessage(input, message, type) {
+  // get the small element and set the message
+  const msg = input.parentNode.querySelector("small");
+  msg.innerText = message;
+  // update the class for the input
+  input.className = type ? "success" : "error";
+  return type;
+}
+
+function showError(input, message) {
+  return showMessage(input, message, false);
+}
+
+function showSuccess(input) {
+  return showMessage(input, "", true);
+}
+
+function hasValue(input, message) {
+  if (input.value.trim() === "") {
+    return showError(input, message);
+  }
+  return showSuccess(input);
+}
+
+function validateEmail(input, invalidMsg) {
+  // validate email format
+  const emailRegex = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
+
+  const email = input.value.trim();
+  if (!emailRegex.test(email)) {
+    return showError(input, invalidMsg);
+  }
+  return true;
+}
+const form = document.querySelector("#formC");
+const EMAIL_INVALID = "Email should be in lowercase";
+
+form.addEventListener("submit", function (event) {
+  // stop form submission
+  event.preventDefault();
+
+  // validate the form
+  let emailValid = validateEmail(form.elements["email"], EMAIL_INVALID);
+  // if valid, submit the form.
+  if (emailValid) {
+    form.submit();
+  }
+});
