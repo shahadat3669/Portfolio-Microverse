@@ -201,7 +201,17 @@ form.message.addEventListener('change', () => {
   localStorage.setItem('formData', JSON.stringify(formObject));
 });
 
-// (
-//   // self executing function here
-//   function () {}
-// )();
+if (JSON.parse(localStorage.getItem('formData')) === null) {
+  formObject.name = '';
+  formObject.email = '';
+  formObject.message = '';
+} else {
+  const data = JSON.parse(localStorage.getItem('formData'));
+  formObject.name = data.name;
+  formObject.email = data.email;
+  formObject.message = data.message;
+}
+
+form.name.value = formObject.name;
+form.email.value = formObject.email;
+form.message.value = formObject.message;
