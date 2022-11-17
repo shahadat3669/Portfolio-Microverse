@@ -180,3 +180,28 @@ form.addEventListener('submit', (event) => {
     form.submit();
   }
 });
+
+// sava data to localStorage
+const formObject = {
+  name: '',
+  email: '',
+  message: '',
+};
+form.name.addEventListener('change', () => {
+  formObject[form.name.name] = form.name.value;
+  localStorage.setItem('formData', JSON.stringify(formObject));
+});
+form.email.addEventListener('change', () => {
+  formObject[form.email.name] = form.email.value;
+  localStorage.setItem('formData', JSON.stringify(formObject));
+});
+
+form.message.addEventListener('change', () => {
+  formObject[form.message.name] = form.message.value;
+  localStorage.setItem('formData', JSON.stringify(formObject));
+});
+
+// (
+//   // self executing function here
+//   function () {}
+// )();
