@@ -149,3 +149,34 @@ if (x === 1) {
 
 headerHamburger.addEventListener('click', menuToggler);
 headerClose.addEventListener('click', menucloseToggler);
+
+function showMessage(input, message, type) {
+  const msg = document.querySelector('small');
+  msg.innerText = message;
+  input.className = type ? 'success' : 'error';
+  return type;
+}
+
+function showError(input, message) {
+  return showMessage(input, message, false);
+}
+
+function validateEmail(input, invalidMsg) {
+  // validate email format
+  const emailRegex = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
+  const email = input.value.trim();
+  if (!emailRegex.test(email)) {
+    return showError(input, invalidMsg);
+  }
+  return true;
+}
+const form = document.querySelector('#formC');
+const EMAIL_INVALID = 'Email should be in lowercase';
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const emailValid = validateEmail(form.elements.email, EMAIL_INVALID);
+  if (emailValid) {
+    form.submit();
+  }
+});

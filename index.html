@@ -156,12 +156,15 @@
       <div class="wrapper">
         <div class="contact-form-inner">
           <h2 class="contact-form-title title-3">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
-          <form action="https://formspree.io/f/myyvbjla" method="POST" class="contact-form-form">
+          <form action="https://formspree.io/f/myyvbjla" method="POST" class="contact-form-form" id="formC">
             <input type="text" id="contact-form-full-name" placeholder="Full name" name="full-name" maxlength="30" required />
             <input type="email" placeholder="Email address" id="contact-form-email" name="email" required />
             <textarea name="message" id="contact-form-message" cols="30" rows="5" placeholder="Enter text here" maxlength="500" required></textarea>
+            <div class="form-error-message-wrapper">
+              <small class="form-error-message"></small>
+            </div>
             <div class="contact-form-btn-wrapper">
-              <button class="btn btn-primary">Get in touch</button>
+              <button id="contact-form-submit" type="submit" class="btn btn-primary">Get in touch</button>
             </div>
           </form>
         </div>
