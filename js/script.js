@@ -180,3 +180,38 @@ form.addEventListener('submit', (event) => {
     form.submit();
   }
 });
+
+// sava data to localStorage
+const formObject = {
+  name: '',
+  email: '',
+  message: '',
+};
+form.name.addEventListener('change', () => {
+  formObject[form.name.name] = form.name.value;
+  localStorage.setItem('formData', JSON.stringify(formObject));
+});
+form.email.addEventListener('change', () => {
+  formObject[form.email.name] = form.email.value;
+  localStorage.setItem('formData', JSON.stringify(formObject));
+});
+
+form.message.addEventListener('change', () => {
+  formObject[form.message.name] = form.message.value;
+  localStorage.setItem('formData', JSON.stringify(formObject));
+});
+
+if (JSON.parse(localStorage.getItem('formData')) === null) {
+  formObject.name = '';
+  formObject.email = '';
+  formObject.message = '';
+} else {
+  const data = JSON.parse(localStorage.getItem('formData'));
+  formObject.name = data.name;
+  formObject.email = data.email;
+  formObject.message = data.message;
+}
+
+form.name.value = formObject.name;
+form.email.value = formObject.email;
+form.message.value = formObject.message;
