@@ -2,7 +2,9 @@ const navbar = document.querySelector('.header-navbar');
 const headerHamburger = document.querySelector('#header-hamburger');
 const headerClose = document.querySelector('.header-close');
 const popupwindow = document.querySelector('#popup');
-const recentWorkCardsContainer = document.querySelector('.recent-work-cards-container');
+const recentWorkCardsContainer = document.querySelector(
+  '.recent-work-cards-container',
+);
 
 function menuToggler() {
   const navbar = document.querySelector('.header-navbar');
@@ -20,19 +22,25 @@ function popupWC() {
 const projectList = [
   {
     id: 0,
-    title: 'Multi-Post Stories Gain+Glory',
-    desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    tags: ['Ruby on rails', 'css', 'JavScript', 'html'],
-    imgUrl: './dist/images/placeholder.png',
-    live: 'https://shahadat3669.github.io/Portfolio-Microverse/',
-    source: 'https://github.com/shahadat3669/Portfolio-Microverse',
+    title: 'Pie World Conference',
+    desc: "This is my first capstone project in Microverse Coding School. Which is built with HTML, CSS & JavaScript. Here I learn to show the speaker's dynamically using JavaScript.",
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    imgUrl: {
+      large: './dist/images/projects/conference-home-large.png',
+      small: './dist/images/projects/conference-home-small.png',
+    },
+    live: 'https://shahadat3669.github.io/pie-world-conference-page/',
+    source: 'https://github.com/shahadat3669/pie-world-conference-page',
   },
   {
     id: 1,
     title: 'Multi-Post Stories Gain+Glory',
     desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     tags: ['Ruby on rails', 'css', 'JavScript', 'html'],
-    imgUrl: './dist/images/placeholder.png',
+    imgUrl: {
+      large: './dist/images/placeholder.png',
+      small: './dist/images/placeholder.png',
+    },
     live: 'https://shahadat3669.github.io/Portfolio-Microverse/',
     source: 'https://github.com/shahadat3669/Portfolio-Microverse',
   },
@@ -41,7 +49,10 @@ const projectList = [
     title: 'Multi-Post Stories Gain+Glory',
     desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     tags: ['Ruby on rails', 'css', 'JavScript', 'html'],
-    imgUrl: './dist/images/placeholder.png',
+    imgUrl: {
+      large: './dist/images/placeholder.png',
+      small: './dist/images/placeholder.png',
+    },
     live: 'https://shahadat3669.github.io/Portfolio-Microverse/',
     source: 'https://github.com/shahadat3669/Portfolio-Microverse',
   },
@@ -50,7 +61,10 @@ const projectList = [
     title: 'Multi-Post Stories Gain+Glory',
     desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     tags: ['Ruby on rails', 'css', 'JavScript', 'html'],
-    imgUrl: './dist/images/placeholder.png',
+    imgUrl: {
+      large: './dist/images/placeholder.png',
+      small: './dist/images/placeholder.png',
+    },
     live: 'https://shahadat3669.github.io/Portfolio-Microverse/',
     source: 'https://github.com/shahadat3669/Portfolio-Microverse',
   },
@@ -59,7 +73,10 @@ const projectList = [
     title: 'Multi-Post Stories Gain+Glory',
     desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     tags: ['Ruby on rails', 'css', 'JavScript', 'html'],
-    imgUrl: './dist/images/placeholder.png',
+    imgUrl: {
+      large: './dist/images/placeholder.png',
+      small: './dist/images/placeholder.png',
+    },
     live: 'https://shahadat3669.github.io/Portfolio-Microverse/',
     source: 'https://github.com/shahadat3669/Portfolio-Microverse',
   },
@@ -68,7 +85,10 @@ const projectList = [
     title: 'Multi-Post Stories Gain+Glory',
     desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     tags: ['Ruby on rails', 'css', 'JavScript', 'html'],
-    imgUrl: './dist/images/placeholder.png',
+    imgUrl: {
+      large: './dist/images/placeholder.png',
+      small: './dist/images/placeholder.png',
+    },
     live: 'https://shahadat3669.github.io/Portfolio-Microverse/',
     source: 'https://github.com/shahadat3669/Portfolio-Microverse',
   },
@@ -81,15 +101,20 @@ projectList.forEach((project) => {
   <!-- recent work card ${project.id} -->
     <div class="card">
       <div class="card-image-container">
-        <img src="${project.imgUrl}" alt="${project.title}" />
+        <img src="${project.imgUrl.small}" alt="${project.title}" />
       </div>
       <div class="card-content">
         <h3 class="card-title">${project.title}</h3>
         <ul class="card-list-items"> 
-         ${project.tags.map((tag) => `<li class="card-list-item">${tag}</li>`).join(' ')} 
+  ${project.tags
+    .map((tag) => `<li class="card-list-item">${tag}</li>`)
+    .join(' ')} 
         </ul>
         <div class="card-btn-container">
-          <button class="btn btn-primary btn-project" onclick="popupW(${project.id})">See Project</button>
+          <button class="btn btn-primary btn-project" 
+          onclick="popupW(${project.id})">
+          See Project
+          </button>
         </div>
       </div>
   </div>
@@ -107,30 +132,37 @@ function popupW(id) {
           <img src="./dist/images/popup-cancle.svg" alt="icon cancel" class="popup-cancle-icon" />
       </button>
       <div class="popup-img-box"> 
-      <img src="${projectList[id].imgUrl}" alt="${projectList[id].title}" />
+      <img src="${projectList[id].imgUrl.large}" 
+      alt="${projectList[id].title}" />
       </div>
 
     </div>
     <div class="popup-primary-text">
       <div class="popup-title-container">
-        <h3 class="popup-title">Keeping track of hundreds of components</h3>
+        <h3 class="popup-title">${projectList[id].title}</h3>
         <div class="popup-top-action-container">
           <div class="inner">
-            <a href="${projectList[id].live}" target="_blank" class="popup-action-btn btn btn-primary popup-action">See Live <img src="dist/images/live.svg" class="popup-action-btn-icon" alt="" /></a>
-            <a href="${projectList[id].source}" target="_blank" class="popup-action-btn btn btn-primary popup-action">See Source <img src="dist/images/white-github.svg" class="popup-action-btn-icon" alt="" /></a>
+            <a href="${projectList[id].live}" 
+            target="_blank" class="popup-action-btn btn btn-primary popup-action">See Live <img src="dist/images/live.svg" class="popup-action-btn-icon" alt="" /></a>
+            <a href="${projectList[id].source}"
+            target="_blank" class="popup-action-btn btn btn-primary popup-action">See Source <img src="dist/images/white-github.svg" class="popup-action-btn-icon" alt="" /></a>
           </div>
         </div>
       </div>
       <ul class="card-list-items popup-tags">
-      ${projectList[id].tags.map((tag) => `<li class="card-list-item">${tag}</li>`).join(' ')} 
+  ${projectList[id].tags
+    .map((tag) => `<li class="card-list-item">${tag}</li>`)
+    .join(' ')} 
       </ul>
     </div>
     <div class="popup-left-block">
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea</p>
+      <p>${projectList[id].desc}</p>
     </div>
     <div class="popup-action-container">
-      <a href="${projectList[id].live}" target="_blank" class="popup-action-btn btn btn-primary popup-action">See Live <img src="dist/images/live.svg" class="popup-action-btn-icon" alt="" /></a>
-      <a href="${projectList[id].source}" target="_blank" class="popup-action-btn btn btn-primary popup-action">See Source <img src="dist/images/white-github.svg" class="popup-action-btn-icon" alt="" /></a>
+      <a href="${projectList[id].live}" 
+      target="_blank" class="popup-action-btn btn btn-primary popup-action">See Live <img src="dist/images/live.svg" class="popup-action-btn-icon" alt="" /></a>
+      <a href="${projectList[id].source}" 
+      target="_blank" class="popup-action-btn btn btn-primary popup-action">See Source <img src="dist/images/white-github.svg" class="popup-action-btn-icon" alt="" /></a>
     </div>
   </div>
 </div>

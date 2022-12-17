@@ -147,10 +147,6 @@ li {
   transition: all 0.5s ease-in-out;
 }
 
-.card-image-container:hover img {
-  transform: scale(1.2);
-}
-
 .card-content {
   background-color: #fff;
   border-radius: 8px;
