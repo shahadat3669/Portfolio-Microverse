@@ -96,13 +96,13 @@ projectList.forEach((project) => {
         <h3 class="card-title">${project.title}</h3>
         <ul class="card-list-items"> 
          ${project.tags
-           .map((tag) => `<li class="card-list-item">${tag}</li>`)
-           .join(' ')} 
+    .map((tag) => `<li class="card-list-item">${tag}</li>`)
+    .join(' ')} 
         </ul>
         <div class="card-btn-container">
           <button class="btn btn-primary btn-project" onclick="popupW(${
-            project.id
-          })">See Project</button>
+  project.id
+})">See Project</button>
         </div>
       </div>
   </div>
@@ -130,18 +130,18 @@ function popupW(id) {
         <div class="popup-top-action-container">
           <div class="inner">
             <a href="${
-              projectList[id].live
-            }" target="_blank" class="popup-action-btn btn btn-primary popup-action">See Live <img src="dist/images/live.svg" class="popup-action-btn-icon" alt="" /></a>
+  projectList[id].live
+}" target="_blank" class="popup-action-btn btn btn-primary popup-action">See Live <img src="dist/images/live.svg" class="popup-action-btn-icon" alt="" /></a>
             <a href="${
-              projectList[id].source
-            }" target="_blank" class="popup-action-btn btn btn-primary popup-action">See Source <img src="dist/images/white-github.svg" class="popup-action-btn-icon" alt="" /></a>
+  projectList[id].source
+}" target="_blank" class="popup-action-btn btn btn-primary popup-action">See Source <img src="dist/images/white-github.svg" class="popup-action-btn-icon" alt="" /></a>
           </div>
         </div>
       </div>
       <ul class="card-list-items popup-tags">
       ${projectList[id].tags
-        .map((tag) => `<li class="card-list-item">${tag}</li>`)
-        .join(' ')} 
+    .map((tag) => `<li class="card-list-item">${tag}</li>`)
+    .join(' ')} 
       </ul>
     </div>
     <div class="popup-left-block">
@@ -149,11 +149,11 @@ function popupW(id) {
     </div>
     <div class="popup-action-container">
       <a href="${
-        projectList[id].live
-      }" target="_blank" class="popup-action-btn btn btn-primary popup-action">See Live <img src="dist/images/live.svg" class="popup-action-btn-icon" alt="" /></a>
+  projectList[id].live
+}" target="_blank" class="popup-action-btn btn btn-primary popup-action">See Live <img src="dist/images/live.svg" class="popup-action-btn-icon" alt="" /></a>
       <a href="${
-        projectList[id].source
-      }" target="_blank" class="popup-action-btn btn btn-primary popup-action">See Source <img src="dist/images/white-github.svg" class="popup-action-btn-icon" alt="" /></a>
+  projectList[id].source
+}" target="_blank" class="popup-action-btn btn btn-primary popup-action">See Source <img src="dist/images/white-github.svg" class="popup-action-btn-icon" alt="" /></a>
     </div>
   </div>
 </div>
@@ -186,8 +186,7 @@ function showError(input, message) {
 
 function validateEmail(input, invalidMsg) {
   // validate email format
-  const emailRegex =
-    /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
+  const emailRegex = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
   const email = input.value.trim();
   if (!emailRegex.test(email)) {
     return showError(input, invalidMsg);
