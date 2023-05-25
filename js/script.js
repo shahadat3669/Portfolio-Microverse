@@ -25,7 +25,7 @@ const projectList = [
     title: 'Rent Home Now',
     desc: 'Rent Home Now is a website that facilitates the connection between property owners interested in renting out their properties and potential renters. This site allows for the creation of reservations on selected properties.',
     tags: ['Ruby on rails', 'ReactJs', 'Redux Toolkit', 'API', 'TDD'],
-    imgUrl: '../dist/images/projects/rent_home_now.png',
+    imgUrl: './dist/images/projects/rent_home_now.png',
     live: 'https://github.com/shahadat3669/rent-home-now',
     source: 'https://github.com/shahadat3669/rent-home-now',
   },
@@ -34,7 +34,7 @@ const projectList = [
     title: 'SnapPay',
     desc: 'The SnapPay, a Microverse Ruby on Rails capstone TDD project allows you to easily track your expenses by creating a list of transactions and categorizing them. By doing so, you can effortlessly analyze your spending patterns and gain valuable insights into where your money is going. SnapPay is designed with a sleek and user-friendly interface that can be accessed from your mobile device, making it a convenient tool for anyone looking to take control of their finances.',
     tags: ['Ruby on rails', 'Mobile UI', 'Bootstrap5', 'TDD'],
-    imgUrl: '../dist/images/projects/snappay.png',
+    imgUrl: './dist/images/projects/snappay.png',
     live: 'https://snap-pay.onrender.com/',
     source: 'https://github.com/shahadat3669/snap-pay',
   },
@@ -50,7 +50,7 @@ const projectList = [
       'SCSS',
       'Jest',
     ],
-    imgUrl: '../dist/images/projects/metrics.png',
+    imgUrl: './dist/images/projects/metrics.png',
     live: 'https://matrics.onrender.com/',
     source: 'https://github.com/shahadat3669/metrics-webapp',
   },
@@ -59,7 +59,7 @@ const projectList = [
     title: 'Waregfood',
     desc: "We are a technology company first, but with a major focus on consumer well-being through a healthy diet. Most people are very busy with their jobs, family and friends, and other important activities, which doesn't leave much time for cooking. This might lead to a poor diet and lasting health consequences. We want to solve this problem by using an AI-centric approach. Users can use our app to select their diet and foods they like and dislike, and our AI algorithm will create a custom and individual weekly meal plan. But we don't stop there. We partner with restaurants and other cooking partners to actually cook and deliver all meals from the generated meal plans, in selected cities. All this will be packed up in a monthly subscription, where users can choose between receiving one or two meals per day, every single day of the month.",
     tags: ['Html', 'CSS', 'JavaScript', 'SCSS'],
-    imgUrl: '../dist/images/projects/waregfood.png',
+    imgUrl: './dist/images/projects/waregfood.png',
     live: 'https://shahadat3669.github.io/waregfood/dist/index.html',
     source: 'https://github.com/shahadat3669/waregfood',
   },
@@ -68,7 +68,7 @@ const projectList = [
     title: 'Pie World Conference',
     desc: 'This is my first capstone project in Microverse Coding School. Which is built with HTML, CSS & JavaScript. Here I learn to show the speakers dynamically by using JavaScript.',
     tags: ['HTML', 'CSS', 'JavaScript'],
-    imgUrl: '../dist/images/projects/pie-world-cnference.png',
+    imgUrl: './dist/images/projects/pie-world-cnference.png',
     live: 'https://shahadat3669.github.io/pie-world-conference-page',
     source: 'https://github.com/shahadat3669/pie-world-conference-page',
   },
@@ -77,7 +77,7 @@ const projectList = [
     title: 'Leaderboard',
     desc: 'The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.',
     tags: ['HTML', 'CSS', 'JavaScript', 'SCSS'],
-    imgUrl: '../dist/images/projects/leader-board.png',
+    imgUrl: './dist/images/projects/leader-board.png',
     live: 'https://shahadat3669.github.io/leaderboard/dist/index.html',
     source: 'https://github.com/shahadat3669/leaderboard',
   },
@@ -96,13 +96,13 @@ projectList.forEach((project) => {
         <h3 class="card-title">${project.title}</h3>
         <ul class="card-list-items"> 
          ${project.tags
-    .map((tag) => `<li class="card-list-item">${tag}</li>`)
-    .join(' ')} 
+           .map((tag) => `<li class="card-list-item">${tag}</li>`)
+           .join(' ')} 
         </ul>
         <div class="card-btn-container">
           <button class="btn btn-primary btn-project" onclick="popupW(${
-  project.id
-})">See Project</button>
+            project.id
+          })">See Project</button>
         </div>
       </div>
   </div>
@@ -130,18 +130,18 @@ function popupW(id) {
         <div class="popup-top-action-container">
           <div class="inner">
             <a href="${
-  projectList[id].live
-}" target="_blank" class="popup-action-btn btn btn-primary popup-action">See Live <img src="dist/images/live.svg" class="popup-action-btn-icon" alt="" /></a>
+              projectList[id].live
+            }" target="_blank" class="popup-action-btn btn btn-primary popup-action">See Live <img src="dist/images/live.svg" class="popup-action-btn-icon" alt="" /></a>
             <a href="${
-  projectList[id].source
-}" target="_blank" class="popup-action-btn btn btn-primary popup-action">See Source <img src="dist/images/white-github.svg" class="popup-action-btn-icon" alt="" /></a>
+              projectList[id].source
+            }" target="_blank" class="popup-action-btn btn btn-primary popup-action">See Source <img src="dist/images/white-github.svg" class="popup-action-btn-icon" alt="" /></a>
           </div>
         </div>
       </div>
       <ul class="card-list-items popup-tags">
       ${projectList[id].tags
-    .map((tag) => `<li class="card-list-item">${tag}</li>`)
-    .join(' ')} 
+        .map((tag) => `<li class="card-list-item">${tag}</li>`)
+        .join(' ')} 
       </ul>
     </div>
     <div class="popup-left-block">
@@ -149,11 +149,11 @@ function popupW(id) {
     </div>
     <div class="popup-action-container">
       <a href="${
-  projectList[id].live
-}" target="_blank" class="popup-action-btn btn btn-primary popup-action">See Live <img src="dist/images/live.svg" class="popup-action-btn-icon" alt="" /></a>
+        projectList[id].live
+      }" target="_blank" class="popup-action-btn btn btn-primary popup-action">See Live <img src="dist/images/live.svg" class="popup-action-btn-icon" alt="" /></a>
       <a href="${
-  projectList[id].source
-}" target="_blank" class="popup-action-btn btn btn-primary popup-action">See Source <img src="dist/images/white-github.svg" class="popup-action-btn-icon" alt="" /></a>
+        projectList[id].source
+      }" target="_blank" class="popup-action-btn btn btn-primary popup-action">See Source <img src="dist/images/white-github.svg" class="popup-action-btn-icon" alt="" /></a>
     </div>
   </div>
 </div>
@@ -186,7 +186,8 @@ function showError(input, message) {
 
 function validateEmail(input, invalidMsg) {
   // validate email format
-  const emailRegex = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
+  const emailRegex =
+    /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
   const email = input.value.trim();
   if (!emailRegex.test(email)) {
     return showError(input, invalidMsg);
