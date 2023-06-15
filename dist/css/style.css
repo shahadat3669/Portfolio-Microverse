@@ -378,6 +378,7 @@ li {
 - - - - - - - - - - - - - - - - - - - - - - */
 #headline {
   padding: 64px 0;
+  z-index: 100;
   background-image: url('../images/headline/background-1.svg'), url('../images/headline/background-2.svg'), url('../images/headline/background-3.svg'), url('../images/headline/background-4.svg'), url('../images/headline/background-5.svg'), url('../images/headline/background-6.svg'), url('../images/headline/background-7.svg'), url('../images/headline/background-8.svg');
   background-position: center center, 100% 42%, 0% 72%, 0% 19%, 0% 0%, 100% -1%, 40% 68%, 100% 90%;
   background-repeat: no-repeat;
@@ -390,9 +391,10 @@ li {
 
 @media (min-width: 768px) {
   #headline {
-    background-image: none;
+    background-image: url('../images/background.svg');
+    background-size: 130%;
     padding: 160px 0;
-    margin-bottom: 200px;
+    margin-bottom: 80px;
   }
 
   .headline-bg {
